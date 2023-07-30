@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 // @ts-ignore
 import Typed from "typed.js";
-import { SubTitle, Title } from "../styles/common/Text";
+import { SubTitle } from "../styles/common/Text";
 
 const TypedLineWrapper = styled.div`
   border: solid red;

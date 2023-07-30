@@ -14,7 +14,9 @@ export const SubTitle = styled.h2`
   margin: 0;
   font-size: 2em;
   /* text-align: center; */
-  color: ${({ theme }) => theme.DarkBlue};
+  color: ${({ theme }) => theme.LightBlue};
+
+  /* color: ${({ theme }) => theme.DarkBlue}; */
   @media (max-width: 640px) {
     font-size: 1.5em;
   }
