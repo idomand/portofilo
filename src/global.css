@@ -1,0 +1,18 @@
+body {
+  /* background-color: #222831; */
+}
+/* Cursor */
+.typed-cursor {
+  font-size: 2em;
+}
+@media (max-width: 640px) {
+  .typed-cursor {
+    font-size: 1.5em;
+  }
+}
+
+/* If fade out option is set */
+.typed-fade-out {
+  font-size: 15px;
+  color: red;
+}
