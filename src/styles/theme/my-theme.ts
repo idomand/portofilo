@@ -4,6 +4,7 @@ const myTheme: DefaultTheme = {
   black: "#000000",
   white: "#ffffff",
   grey1: "#D3D3D3",
+  blue: "#007BFF",
   borderRadius: "5px",
   LightBlue: "#00ADB5",
   DarkBlue: "#393E46",

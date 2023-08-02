@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 // @ts-ignore
 import Typed from "typed.js";
-import { SubTitle } from "../styles/common/Text";
+import { Header2 } from "../styles/common/Text";
 
 const TypedLineWrapper = styled.div`
   text-align: left;
@@ -10,11 +10,12 @@ const TypedLineWrapper = styled.div`
   justify-content: flex-start;
   color: black;
   align-items: center;
+  margin-top: 18px;
 `;
 
-const TypedText = styled(SubTitle)`
+const TypedText = styled(Header2)`
   color: black;
-  font-size: 0.8;
+  font-size: 0.8em;
 `;
 
 export default function TypedLine() {
@@ -30,7 +31,7 @@ export default function TypedLine() {
         "I do TypeScript",
         "I do Next.js",
         "I do CSS, SASS, Tailwind and Styled-Components",
-        "I do Everything everywhere all at once!",
+        "I can do Everything everywhere all at once!",
       ],
       typeSpeed: 50,
       smartBackspace: true,

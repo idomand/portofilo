@@ -1,10 +1,18 @@
+import { styled } from "styled-components";
 import Section1 from "./Components/Section1";
+import Section2 from "./Components/Section2";
+
+const MainWrapper = styled.main`
+  max-width: 900px;
+  margin: auto;
+`;
 
 function App() {
   return (
-    <main>
+    <MainWrapper>
       <Section1 />
-    </main>
+      <Section2 />
+    </MainWrapper>
   );
 }
 
