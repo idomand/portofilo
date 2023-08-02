@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { Div, Section } from "../styles/common/Continer";
+import { Div, Section } from "../styles/common/Container";
 import { Header3, ListItem, UL } from "../styles/common/Text";
 import { BasicLink } from "../styles/common/Links";
 
@@ -65,7 +65,7 @@ export default function Section2({}: Props) {
             <ListItem>
               Strategic mindset and multidiscipListItemnary background
             </ListItem>
-            <BasicLink>Download CV</BasicLink>
+            <CVLink>Download CV</CVLink>
           </UL>
         </Div>
         <Div2>

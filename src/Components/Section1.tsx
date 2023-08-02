@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { Header1 } from "../styles/common/Text";
 import TypedLine from "./TypedLine";
 import { EmailLink } from "../styles/common/Links";
-import { Section } from "../styles/common/Continer";
+import { Section } from "../styles/common/Container";
 
 const Section1Wrapper = styled(Section)`
   max-width: 900px;

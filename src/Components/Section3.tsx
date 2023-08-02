@@ -1,6 +1,5 @@
-import React from "react";
 import { styled } from "styled-components";
-import { Section } from "../styles/common/Continer";
+import { Section } from "../styles/common/Container";
 
 const Section3Wrapper = styled(Section)`
   --skew-angle: -5deg;
