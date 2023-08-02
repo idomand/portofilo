@@ -5,10 +5,16 @@ import Typed from "typed.js";
 import { SubTitle } from "../styles/common/Text";
 
 const TypedLineWrapper = styled.div`
-  border: solid red;
   text-align: left;
   display: flex;
   justify-content: flex-start;
+  color: black;
+  align-items: center;
+`;
+
+const TypedText = styled(SubTitle)`
+  color: black;
+  font-size: 0.8;
 `;
 
 export default function TypedLine() {
@@ -23,7 +29,7 @@ export default function TypedLine() {
         "I do React.js",
         "I do TypeScript",
         "I do Next.js",
-        "I do CSS, SASS, Tailwind-css, styled-components",
+        "I do CSS, SASS, Tailwind and Styled-Components",
         "I do Everything everywhere all at once!",
       ],
       typeSpeed: 50,
@@ -38,7 +44,7 @@ export default function TypedLine() {
 
   return (
     <TypedLineWrapper>
-      <SubTitle ref={el} />
+      <TypedText ref={el} />
     </TypedLineWrapper>
   );
 }

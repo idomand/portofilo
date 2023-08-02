@@ -1,18 +1,19 @@
 body {
-  background-color: #222831;
+  background: #dcf0fe;
 }
 /* Cursor */
 .typed-cursor {
-  font-size: 2em;
+  font-size: 0.8em;
+  color: black;
 }
 @media (max-width: 640px) {
   .typed-cursor {
-    font-size: 1.5em;
+    font-size: 0.8em;
   }
 }
 
 /* If fade out option is set */
 .typed-fade-out {
-  font-size: 15px;
-  color: red;
+  font-size: 0.8em;
+  color: black;
 }
