@@ -22,9 +22,9 @@ export const Header2 = styled.h2`
 `;
 
 export const Header3 = styled.h3`
-  margin: 0 0 48px 0;
+  margin: 24px 0 24px 0;
+  text-align: center;
   font-weight: 700;
-
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -39,6 +39,11 @@ export const Text = styled.p`
   line-height: 150%;
   letter-spacing: -0.4px;
 `;
+
+export const UL = styled.ul`
+  margin: 0;
+`;
+
 export const ListItem = styled.li`
   font-size: 16px;
   font-style: normal;

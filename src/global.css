@@ -1,3 +1,7 @@
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background: #dcf0fe;
   font-family: "Montserrat", sans-serif;

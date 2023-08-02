@@ -1,18 +1,22 @@
 import { styled } from "styled-components";
-import { Div } from "../styles/common/Continer";
-import { Header3, ListItem } from "../styles/common/Text";
+import { Div, Section } from "../styles/common/Continer";
+import { Header3, ListItem, UL } from "../styles/common/Text";
 import { BasicLink } from "../styles/common/Links";
 
 type Props = {};
 
-const Section2Wrapper = styled.section`
-  margin-top: 48px;
+const Section2Wrapper = styled(Section)`
+  /* margin-top: 48px; */
 `;
 
 const WhyNo = styled.div``;
 const WhyYes = styled.div`
   display: flex;
   justify-content: space-around;
+`;
+
+const Div2 = styled(Div)`
+  margin-left: 24px;
 `;
 
 const CVLink = styled(BasicLink).attrs(() => {
@@ -32,7 +36,7 @@ export default function Section2({}: Props) {
       <WhyNo>
         <Header3>What you Should not know about me</Header3>
         <Div>
-          <ul>
+          <UL>
             <ListItem>will finish the coffee in the office</ListItem>
             <ListItem>
               will finish the glühwein at the christmas party.
@@ -46,16 +50,14 @@ export default function Section2({}: Props) {
             <ListItem>Good at syntax errors</ListItem>
             <ListItem>Use of tabs and spaces</ListItem>
             <ListItem>Argumentative (Was a lawyer)</ListItem>
-          </ul>
+          </UL>
         </Div>
       </WhyNo>
       <Header3>What you Should know about me</Header3>
       <WhyYes>
         <Div>
-          <ul>
-            <ListItem>
-              BerListItemn based with family reunification visa
-            </ListItem>
+          <UL>
+            <ListItem>Berlin based with family reunification visa</ListItem>
             <ListItem>Excellent evaluations from previous jobs</ListItem>
             <ListItem>Team player</ListItem>
             <ListItem>People person</ListItem>
@@ -64,19 +66,19 @@ export default function Section2({}: Props) {
               Strategic mindset and multidiscipListItemnary background
             </ListItem>
             <BasicLink>Download CV</BasicLink>
-          </ul>
+          </UL>
         </Div>
-        <Div>
-          <ul>
+        <Div2>
+          <UL>
             <ListItem>Proficient in JavaScript and typescript</ListItem>
             <ListItem>Experience in React.js including v18</ListItem>
             <ListItem>Next.js, Redux - Intermediate</ListItem>
             <ListItem>CSS - proficient</ListItem>
             <ListItem>Node.js - FamiListItemar</ListItem>
             <ListItem>Git, Magento, ListItemnux - Basic</ListItem>
-          </ul>
+          </UL>
           <GitHubLink>See Github</GitHubLink>
-        </Div>
+        </Div2>
       </WhyYes>
     </Section2Wrapper>
   );
