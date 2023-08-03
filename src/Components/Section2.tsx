@@ -28,7 +28,7 @@ const Div2 = styled(Div)`
 const Div3 = styled(Div)`
   margin-left: 24px;
   @media (${({ theme }) => theme.devices.break1}) {
-    margin-left: 0px;
+    margin-left: 12px;
   }
 `;
 
@@ -78,8 +78,8 @@ export default function Section2({}: Props) {
             <ListItem>
               Strategic mindset and multidiscipListItemnary background
             </ListItem>
-            <CVLink>Download CV</CVLink>
           </UL>
+          <CVLink>Download CV</CVLink>
         </Div2>
         <Div3>
           <UL>
@@ -89,8 +89,8 @@ export default function Section2({}: Props) {
             <ListItem>CSS - proficient</ListItem>
             <ListItem>Node.js - FamiListItemar</ListItem>
             <ListItem>Git, Magento, ListItemnux - Basic</ListItem>
-            <GitHubLink>See Github</GitHubLink>
           </UL>
+          <GitHubLink>See Github</GitHubLink>
         </Div3>
       </WhyYes>
     </Section2Wrapper>

@@ -25,9 +25,12 @@ export const EmailLink: any = styled.a.attrs(() => {
     color: ${({ theme }) => theme.mainCTA};
   }
   @media (${({ theme }) => theme.devices.break1}) {
-    width: 100px;
-    max-width: 100px;
-    height: 40px;
+    font-size: 20px;
+    padding: 14px 22px;
+  }
+  @media (${({ theme }) => theme.devices.break2}) {
+    font-size: 16px;
+    padding: 10px 18px;
   }
 `;
 
@@ -39,7 +42,6 @@ export const BasicLink: any = styled.a.attrs(() => {
   background-color: ${({ theme }) => theme.blue};
   color: ${({ theme }) => theme.white};
   border: 1.3px solid ${({ theme }) => theme.white};
-
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
@@ -50,6 +52,7 @@ export const BasicLink: any = styled.a.attrs(() => {
   transition: 0.3s;
   display: inline-block;
   margin-top: 36px;
+  margin-left: 40px;
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
@@ -60,5 +63,12 @@ export const BasicLink: any = styled.a.attrs(() => {
     /* width: 100px;
     max-width: 100px;
     height: 40px; */
+  }
+  @media (${({ theme }) => theme.devices.break2}) {
+    font-size: 16px;
+    padding: 10px 18px;
+    margin-left: 0;
+    width: 85%;
+    text-align: center;
   }
 `;

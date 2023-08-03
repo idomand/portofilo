@@ -6,7 +6,6 @@ import { Section } from "../styles/common/Container";
 
 const Section1Wrapper = styled(Section)`
   max-width: 900px;
-  margin: 0 auto 48px;
 `;
 
 const SiteHeader = styled(Header1)`
@@ -16,6 +15,10 @@ const SiteHeader = styled(Header1)`
   font-size: 57px;
   @media (${({ theme }) => theme.devices.break1}) {
     margin-bottom: 10px;
+    font-size: 45px;
+  }
+  @media (${({ theme }) => theme.devices.break2}) {
+    font-size: 36px;
   }
 `;
 

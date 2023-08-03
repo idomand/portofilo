@@ -14,13 +14,13 @@ export const Header2 = styled.h2`
   font-weight: 700;
 
   color: ${({ theme }) => theme.LightBlue};
-  @media (max-width: 640px) {
-    font-size: 1.5em;
+  @media (${({ theme }) => theme.devices.break2}) {
+    font-size: 1em;
   }
 `;
 
 export const Header3 = styled.h3`
-  margin: 24 0 24px 0;
+  margin: 24px 0;
   text-align: center;
   font-weight: 700;
   font-size: 32px;
@@ -28,6 +28,10 @@ export const Header3 = styled.h3`
   font-weight: 700;
   line-height: 41.205px;
   letter-spacing: 0.16px;
+  @media (${({ theme }) => theme.devices.break2}) {
+    font-size: 1.5em;
+    margin: 12px 0;
+  }
 `;
 
 export const Text = styled.p`
