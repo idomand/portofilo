@@ -57,8 +57,8 @@ export const BasicLink: any = styled.a.attrs(() => {
     color: ${({ theme }) => theme.blue};
   }
   @media (${({ theme }) => theme.devices.break1}) {
-    width: 100px;
+    /* width: 100px;
     max-width: 100px;
-    height: 40px;
+    height: 40px; */
   }
 `;

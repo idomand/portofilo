@@ -13,10 +13,23 @@ const WhyNo = styled.div``;
 const WhyYes = styled.div`
   display: flex;
   justify-content: space-around;
+
+  @media (${({ theme }) => theme.devices.break1}) {
+    flex-direction: column;
+  }
 `;
 
 const Div2 = styled(Div)`
+  @media (${({ theme }) => theme.devices.break1}) {
+    margin-bottom: 15px;
+  }
+`;
+
+const Div3 = styled(Div)`
   margin-left: 24px;
+  @media (${({ theme }) => theme.devices.break1}) {
+    margin-left: 0px;
+  }
 `;
 
 const CVLink = styled(BasicLink).attrs(() => {
@@ -55,7 +68,7 @@ export default function Section2({}: Props) {
       </WhyNo>
       <Header3>What you Should know about me</Header3>
       <WhyYes>
-        <Div>
+        <Div2>
           <UL>
             <ListItem>Berlin based with family reunification visa</ListItem>
             <ListItem>Excellent evaluations from previous jobs</ListItem>
@@ -67,8 +80,8 @@ export default function Section2({}: Props) {
             </ListItem>
             <CVLink>Download CV</CVLink>
           </UL>
-        </Div>
-        <Div2>
+        </Div2>
+        <Div3>
           <UL>
             <ListItem>Proficient in JavaScript and typescript</ListItem>
             <ListItem>Experience in React.js including v18</ListItem>
@@ -76,9 +89,9 @@ export default function Section2({}: Props) {
             <ListItem>CSS - proficient</ListItem>
             <ListItem>Node.js - FamiListItemar</ListItem>
             <ListItem>Git, Magento, ListItemnux - Basic</ListItem>
+            <GitHubLink>See Github</GitHubLink>
           </UL>
-          <GitHubLink>See Github</GitHubLink>
-        </Div2>
+        </Div3>
       </WhyYes>
     </Section2Wrapper>
   );

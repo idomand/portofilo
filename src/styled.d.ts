@@ -15,6 +15,7 @@ declare module "styled-components" {
     mainCTA: string;
     devices: {
       break1: string;
+      break2: string;
     };
   }
 }

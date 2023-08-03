@@ -1,12 +1,10 @@
 import { styled } from "styled-components";
 
 export const Header1 = styled.h1`
-  font-size: 3em;
-  text-align: center;
   color: ${({ theme }) => theme.LightBlue};
-  font-weight: 700;
-  @media (max-width: 640px) {
-    font-size: 2em;
+  @media (${({ theme }) => theme.devices.break1}) {
+  }
+  @media (${({ theme }) => theme.devices.break2}) {
   }
 `;
 
@@ -22,7 +20,7 @@ export const Header2 = styled.h2`
 `;
 
 export const Header3 = styled.h3`
-  margin: 24px 0 24px 0;
+  margin: 24 0 24px 0;
   text-align: center;
   font-weight: 700;
   font-size: 32px;

@@ -11,7 +11,8 @@ const myTheme: DefaultTheme = {
   Grey: "#EEEEEE",
   mainCTA: "#43C6AC;",
   devices: {
-    break1: `max-width: 640px`,
+    break1: `max-width: 1000px`,
+    break2: `max-width: 640px`,
   },
 };
 

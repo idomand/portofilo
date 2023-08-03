@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { Section } from "../styles/common/Container";
 
 const Section3Wrapper = styled(Section)`
-  --skew-angle: -5deg;
+  --skew-angle: -3deg;
   padding-block: 5rem;
   position: relative;
   isolation: isolate;

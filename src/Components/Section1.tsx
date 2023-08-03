@@ -11,10 +11,12 @@ const Section1Wrapper = styled(Section)`
 
 const SiteHeader = styled(Header1)`
   display: inline-block;
-  color: #2c677c;
   margin: 20px 0 48px 0;
   text-align: left;
   font-size: 57px;
+  @media (${({ theme }) => theme.devices.break1}) {
+    margin-bottom: 10px;
+  }
 `;
 
 const SiteHeaderFirst = styled(SiteHeader)`
@@ -29,6 +31,10 @@ const SiteHeaderSecond = styled(SiteHeader)`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 17px;
+
+  @media (${({ theme }) => theme.devices.break1}) {
+    margin: 0 0 10px 0;
+  }
 `;
 
 export default function Section1() {
