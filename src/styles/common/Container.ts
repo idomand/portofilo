@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 
 export const Section = styled.section`
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
   @media (${({ theme }) => theme.devices.break1}) {
     margin: 0 12px;
 

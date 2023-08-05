@@ -1,12 +1,12 @@
 import { styled } from "styled-components";
 import { Section } from "../styles/common/Container";
-import { Header3 } from "../styles/common/Text";
+import { Header2 } from "../styles/common/Text";
+import StayInTouchProject from "./StayInTouchProject";
 
 const Section3Wrapper = styled(Section)`
   --skew-angle: -4deg;
   padding: 2rem 0;
   margin-top: 3rem;
-
   position: relative;
   isolation: isolate;
   /* background-color: white; */
@@ -22,7 +22,7 @@ const Section3Wrapper = styled(Section)`
   }
 `;
 const Wrapper = styled.div`
-  max-width: 50rem;
+  /* max-width: 50rem; */
   margin-inline: auto;
   padding-inline: 1rem;
 `;
@@ -32,7 +32,8 @@ export default function Section3({}: Props) {
   return (
     <Section3Wrapper>
       <Wrapper>
-        <Header3>Get to know me with just 2 projects:</Header3>
+        <Header2>Get to know me with just 2 projects:</Header2>
+        <StayInTouchProject />
       </Wrapper>
     </Section3Wrapper>
   );

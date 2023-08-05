@@ -17,6 +17,7 @@ export const EmailLink: any = styled.a.attrs(() => {
   padding: 16px 24px;
   text-decoration: none;
   transition: 0.3s;
+  max-width: 180px;
   display: inline-block;
   &:hover,
   &:active {

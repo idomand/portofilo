@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { Div, Section } from "../styles/common/Container";
-import { Header3, ListItem, UL } from "../styles/common/Text";
+import { Header2, ListItem, UL } from "../styles/common/Text";
 import { BasicLink } from "../styles/common/Links";
 
 type Props = {};
@@ -35,6 +35,7 @@ const Div3 = styled(Div)`
 const CVLink = styled(BasicLink).attrs(() => {
   return {
     target: "_blank",
+    href: "/Ido_Mandelman_CV.pdf",
   };
 })``;
 const GitHubLink = styled(BasicLink).attrs(() => {
@@ -47,7 +48,7 @@ export default function Section2({}: Props) {
   return (
     <Section2Wrapper>
       <WhyNo>
-        <Header3>What you Should not know about me</Header3>
+        <Header2>What you Should not know about me</Header2>
         <Div>
           <UL>
             <ListItem>will finish the coffee in the office</ListItem>
@@ -66,7 +67,7 @@ export default function Section2({}: Props) {
           </UL>
         </Div>
       </WhyNo>
-      <Header3>What you Should know about me</Header3>
+      <Header2>What you Should know about me</Header2>
       <WhyYes>
         <Div2>
           <UL>
