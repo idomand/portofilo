@@ -13,6 +13,9 @@ export const Div = styled.div`
   background-color: white;
   padding: 36px;
   border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media (${({ theme }) => theme.devices.break1}) {
     padding: 24px;
     margin: 0 12px;

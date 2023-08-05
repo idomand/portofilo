@@ -31,7 +31,7 @@ export default function TypedLine() {
         "I do TypeScript",
         "I do Next.js",
         "I do CSS, SASS, Tailwind and Styled-Components",
-        "I can do Everything everywhere all at once!",
+        "I do Frontend!",
       ],
       typeSpeed: 50,
       smartBackspace: true,

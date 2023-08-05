@@ -53,6 +53,8 @@ export const BasicLink: any = styled.a.attrs(() => {
   display: inline-block;
   margin-top: 36px;
   margin-left: 40px;
+  width: fit-content;
+  cursor: pointer;
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
@@ -68,7 +70,7 @@ export const BasicLink: any = styled.a.attrs(() => {
     font-size: 16px;
     padding: 10px 18px;
     margin-left: 0;
-    width: 85%;
+    width: 100%;
     text-align: center;
   }
 `;
