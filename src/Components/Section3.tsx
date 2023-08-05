@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Section } from "../styles/common/Container";
+import { Header3 } from "../styles/common/Text";
 
 const Section3Wrapper = styled(Section)`
   --skew-angle: -4deg;
@@ -31,12 +32,7 @@ export default function Section3({}: Props) {
   return (
     <Section3Wrapper>
       <Wrapper>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-          reprehenderit quis maiores culpa ipsam totam reiciendis! Pariatur
-          culpa eligendi accusamus odit sit molestias expedita quae. Est eius
-          placeat officia voluptate.
-        </p>
+        <Header3>Get to know me with just 2 projects:</Header3>
       </Wrapper>
     </Section3Wrapper>
   );
