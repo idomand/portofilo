@@ -57,4 +57,5 @@ export const ListItem = styled.li`
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.4px;
+  margin-bottom: 6px;
 `;
