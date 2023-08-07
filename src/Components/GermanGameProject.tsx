@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { Header3, ListItem, UL } from "../styles/common/Text";
-import stayInTouchPicture from "../assets/stayintouch.png";
+import GermanGame from "../assets/GermanGame.png";
 import { ProjectLink } from "../styles/common/Links";
 import {
   Div,
@@ -10,10 +10,13 @@ import {
 } from "../styles/common/Container";
 import { ProjectImg, ProjectPicture } from "../styles/common/pictures";
 
+const ProjectSubSection = styled(Div)`
+  @media (${({ theme }) => theme.devices.break1}) {
+  }
+`;
 const ProjectTitle = styled(Header3)`
   margin-bottom: 16px;
 `;
-
 const ProjectLink_Live = styled(ProjectLink).attrs(() => {
   return {
     href: "https://stay-in-touch.vercel.app/",
@@ -26,12 +29,12 @@ const ProjectLink_Repo = styled(ProjectLink).attrs(() => {
   };
 })``;
 
-export default function StayInTouchProject() {
+export default function GermanGameProject() {
   return (
     <ProjectWrapper>
-      <ProjectTitle>Stay-in-touch</ProjectTitle>
+      <ProjectTitle>German Game</ProjectTitle>
       <ProjectPicture>
-        <ProjectImg src={stayInTouchPicture} />
+        <ProjectImg src={GermanGame} />
       </ProjectPicture>
       <ProjectContentWrapper>
         <Div>

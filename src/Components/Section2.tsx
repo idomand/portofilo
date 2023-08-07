@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { Div, Section } from "../styles/common/Container";
+import { Div, DivRight, Section } from "../styles/common/Container";
 import { Header2, ListItem, UL } from "../styles/common/Text";
 import { BasicLink } from "../styles/common/Links";
 
@@ -17,13 +17,6 @@ const WhyYes = styled.div`
 const Div2 = styled(Div)`
   @media (${({ theme }) => theme.devices.break1}) {
     margin-bottom: 15px;
-  }
-`;
-
-const Div3 = styled(Div)`
-  margin-left: 24px;
-  @media (${({ theme }) => theme.devices.break1}) {
-    margin-left: 12px;
   }
 `;
 
@@ -46,12 +39,10 @@ export default function Section2({}: Props) {
         <Header2>What you Should not know about me</Header2>
         <Div>
           <UL>
-            <ListItem>will finish the coffee in the office</ListItem>
+            <ListItem>Will finish the coffee in the office</ListItem>
+            <ListItem>Will finish the glühwein at the christmas party</ListItem>
             <ListItem>
-              will finish the glühwein at the christmas party.
-            </ListItem>
-            <ListItem>
-              will try to get the company to adopt a dog friendly work
+              Will try to get the company to adopt a dog friendly work
               environment just because it’s fun (and I don’t even have a dog)
             </ListItem>
             <ListItem>Can't stop asking why</ListItem>
@@ -66,18 +57,18 @@ export default function Section2({}: Props) {
       <WhyYes>
         <Div2>
           <UL>
-            <ListItem>Berlin based with family reunification visa</ListItem>
-            <ListItem>Excellent evaluations from previous jobs</ListItem>
-            <ListItem>Team player</ListItem>
-            <ListItem>People person</ListItem>
-            <ListItem>Insatiable hunger to learn</ListItem>
+            <ListItem>Berlin based with family reunification visa.</ListItem>
+            <ListItem>Excellent evaluations from previous jobs.</ListItem>
+            <ListItem>Team player.</ListItem>
+            <ListItem>People person.</ListItem>
+            <ListItem>Insatiable hunger to learn.</ListItem>
             <ListItem>
-              Strategic mindset and multidiscipListItemnary background
+              Strategic mindset and multidisciplinary background.
             </ListItem>
           </UL>
           <CVLink>Download CV</CVLink>
         </Div2>
-        <Div3>
+        <DivRight>
           <UL>
             <ListItem>Proficient in JavaScript and typescript</ListItem>
             <ListItem>Experience in React.js including v18</ListItem>
@@ -87,7 +78,7 @@ export default function Section2({}: Props) {
             <ListItem>Git, Magento, ListItemnux - Basic</ListItem>
           </UL>
           <GitHubLink>See Github</GitHubLink>
-        </Div3>
+        </DivRight>
       </WhyYes>
     </Section>
   );

@@ -26,7 +26,21 @@ export const Div = styled.div`
   }
 `;
 
+export const DivRight = styled(Div)`
+  margin-left: 24px;
+  @media (${({ theme }) => theme.devices.break1}) {
+    margin-left: 12px;
+  }
+`;
+
 export const ProjectWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px black solid;
+`;
+
+export const ProjectContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
