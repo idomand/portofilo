@@ -25,3 +25,12 @@ export const Div = styled.div`
     margin: 0 12px;
   }
 `;
+
+export const ProjectWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  @media (${({ theme }) => theme.devices.break1}) {
+    flex-direction: column;
+  }
+`;

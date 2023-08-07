@@ -74,3 +74,7 @@ export const BasicLink: any = styled.a.attrs(() => {
     text-align: center;
   }
 `;
+
+export const ProjectLink = styled(BasicLink)`
+  font-size: 16px;
+`;

@@ -1,32 +1,13 @@
 import { styled } from "styled-components";
 import { Header3, ListItem, UL } from "../styles/common/Text";
 import stayInTouchPicture from "../assets/stayintouch.png";
-import { BasicLink } from "../styles/common/Links";
-import { Div } from "../styles/common/Container";
+import { ProjectLink } from "../styles/common/Links";
+import { Div, ProjectWrapper } from "../styles/common/Container";
+import { ProjectImg, ProjectPicture } from "../styles/common/pictures";
 
-const StayInTouchProjectWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  @media (${({ theme }) => theme.devices.break1}) {
-    flex-direction: column;
-  }
-`;
 const ProjectSubSection = styled(Div)`
   @media (${({ theme }) => theme.devices.break1}) {
   }
-`;
-
-const ProjectPicture = styled.picture`
-  margin: 0 auto;
-`;
-const ProjectImg = styled.img`
-  width: 100%;
-  max-width: 600px;
-`;
-
-const ProjectLink = styled(BasicLink)`
-  font-size: 16px;
 `;
 
 const ProjectLink_Live = styled(ProjectLink).attrs(() => {
@@ -47,7 +28,7 @@ export default function StayInTouchProject() {
       <ProjectPicture>
         <ProjectImg src={stayInTouchPicture} />
       </ProjectPicture>
-      <StayInTouchProjectWrapper>
+      <ProjectWrapper>
         <ProjectSubSection>
           <Header3>WHY</Header3>
           <UL>
@@ -85,7 +66,7 @@ export default function StayInTouchProject() {
           </UL>
           <ProjectLink_Repo>Repo</ProjectLink_Repo>
         </ProjectSubSection>
-      </StayInTouchProjectWrapper>
+      </ProjectWrapper>
     </>
   );
 }
