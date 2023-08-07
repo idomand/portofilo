@@ -1,4 +1,3 @@
-import React from "react";
 import { styled } from "styled-components";
 import { Header3, ListItem, UL } from "../styles/common/Text";
 import stayInTouchPicture from "../assets/stayintouch.png";
@@ -11,22 +10,25 @@ const StayInTouchProjectWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
+  @media (${({ theme }) => theme.devices.break1}) {
+    flex-direction: column;
+  }
 `;
 const ProjectSubSection = styled(Div)`
-  max-width: 50%;
+  /* max-width: 50%; */
+  @media (${({ theme }) => theme.devices.break1}) {
+  }
 `;
 
-// const ProjectSubSection = styled.div`
-//   max-width: 50%;
-
-// `;
-
 const ProjectPicture = styled.picture`
-  margin: 0 auto 16px;
+  margin: 0 auto;
+`;
+const ProjectImg = styled.img`
+  width: 100%;
+  max-width: 600px;
 `;
 
 const ProjectLink = styled(BasicLink)`
-  /* margin: 0 auto 0; */
   font-size: 16px;
 `;
 
@@ -46,7 +48,7 @@ export default function StayInTouchProject({}: Props) {
   return (
     <>
       <ProjectPicture>
-        <img src={stayInTouchPicture} />
+        <ProjectImg src={stayInTouchPicture} />
       </ProjectPicture>
       <StayInTouchProjectWrapper>
         <ProjectSubSection>

@@ -22,9 +22,11 @@ const Section3Wrapper = styled(Section)`
   }
 `;
 const Wrapper = styled.div`
-  /* max-width: 50rem; */
+  max-width: 100%;
   margin-inline: auto;
-  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 type Props = {};
 
