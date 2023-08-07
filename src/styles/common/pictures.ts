@@ -6,4 +6,7 @@ export const ProjectPicture = styled.picture`
 export const ProjectImg = styled.img`
   width: 100%;
   max-width: 600px;
+  @media (${({ theme }) => theme.devices.break1}) {
+    max-width: 300px;
+  }
 `;

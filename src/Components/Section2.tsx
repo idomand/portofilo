@@ -15,6 +15,7 @@ const WhyYes = styled.div`
 `;
 
 const Div2 = styled(Div)`
+  max-width: 100%;
   @media (${({ theme }) => theme.devices.break1}) {
     margin-bottom: 15px;
   }
@@ -37,7 +38,7 @@ export default function Section2({}: Props) {
     <Section>
       <WhyNo>
         <Header2>What you Should not know about me</Header2>
-        <Div>
+        <Div2>
           <UL>
             <ListItem>Will finish the coffee in the office</ListItem>
             <ListItem>Will finish the glühwein at the christmas party</ListItem>
@@ -51,11 +52,11 @@ export default function Section2({}: Props) {
             <ListItem>Use of tabs and spaces</ListItem>
             <ListItem>Argumentative (Was a lawyer)</ListItem>
           </UL>
-        </Div>
+        </Div2>
       </WhyNo>
       <Header2>What you Should know about me</Header2>
       <WhyYes>
-        <Div2>
+        <Div>
           <UL>
             <ListItem>Berlin based with family reunification visa.</ListItem>
             <ListItem>Excellent evaluations from previous jobs.</ListItem>
@@ -67,7 +68,7 @@ export default function Section2({}: Props) {
             </ListItem>
           </UL>
           <CVLink>Download CV</CVLink>
-        </Div2>
+        </Div>
         <DivRight>
           <UL>
             <ListItem>Proficient in JavaScript and typescript</ListItem>

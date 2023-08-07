@@ -19,17 +19,20 @@ export const Div = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+  max-width: 50%;
   @media (${({ theme }) => theme.devices.break1}) {
     padding: 24px;
     margin: 0 12px;
+    max-width: 100%;
   }
 `;
 
 export const DivRight = styled(Div)`
+  max-width: 50%;
   margin-left: 24px;
   @media (${({ theme }) => theme.devices.break1}) {
     margin-left: 12px;
+    max-width: 100%;
   }
 `;
 
