@@ -18,7 +18,7 @@ export const EmailLink: any = styled.a.attrs(() => {
   text-decoration: none;
   transition: 0.3s;
   max-width: 180px;
-  display: inline-block;
+  display: block;
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
@@ -52,8 +52,7 @@ export const BasicLink: any = styled.a.attrs(() => {
   text-decoration: none;
   transition: 0.3s;
   display: inline-block;
-  margin-top: 36px;
-  margin-left: 40px;
+  margin-top: 16px;
   width: fit-content;
   cursor: pointer;
   &:hover,

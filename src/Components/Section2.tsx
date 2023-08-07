@@ -13,7 +13,6 @@ const WhyNo = styled.div``;
 const WhyYes = styled.div`
   display: flex;
   justify-content: space-around;
-
   @media (${({ theme }) => theme.devices.break1}) {
     flex-direction: column;
   }

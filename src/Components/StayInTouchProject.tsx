@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import { Header3, ListItem, UL } from "../styles/common/Text";
 import stayInTouchPicture from "../assets/stayintouch.png";
 import { BasicLink } from "../styles/common/Links";
+import { Div } from "../styles/common/Container";
 
 type Props = {};
 
@@ -11,17 +12,21 @@ const StayInTouchProjectWrapper = styled.div`
   justify-content: space-between;
   margin-top: 16px;
 `;
-
-const ProjectSubSection = styled.div`
+const ProjectSubSection = styled(Div)`
   max-width: 50%;
 `;
+
+// const ProjectSubSection = styled.div`
+//   max-width: 50%;
+
+// `;
 
 const ProjectPicture = styled.picture`
   margin: 0 auto 16px;
 `;
 
 const ProjectLink = styled(BasicLink)`
-  margin: 0 auto 0;
+  /* margin: 0 auto 0; */
   font-size: 16px;
 `;
 
@@ -59,9 +64,8 @@ export default function StayInTouchProject({}: Props) {
               Also, I Love typescript and next.JS and I wanted to created a
               basic design system for myself
             </ListItem>
-
-            <ProjectLink_Live>Live Site</ProjectLink_Live>
           </UL>
+          <ProjectLink_Live>Live Site</ProjectLink_Live>
         </ProjectSubSection>
         <ProjectSubSection>
           <Header3>HOW</Header3>

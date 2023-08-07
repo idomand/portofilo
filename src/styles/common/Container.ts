@@ -18,6 +18,8 @@ export const Div = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+
   @media (${({ theme }) => theme.devices.break1}) {
     padding: 24px;
     margin: 0 12px;
