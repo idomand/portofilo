@@ -9,7 +9,6 @@ const Section3Wrapper = styled(Section)`
   margin-top: 3rem;
   position: relative;
   isolation: isolate;
-  /* background-color: white; */
   position: relative;
   isolation: isolate;
   &::after {
@@ -28,9 +27,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-type Props = {};
 
-export default function Section3({}: Props) {
+export default function Section3() {
   return (
     <Section3Wrapper>
       <Wrapper>

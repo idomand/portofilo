@@ -5,10 +5,6 @@ import { BasicLink } from "../styles/common/Links";
 
 type Props = {};
 
-const Section2Wrapper = styled(Section)`
-  /* margin-top: 48px; */
-`;
-
 const WhyNo = styled.div``;
 const WhyYes = styled.div`
   display: flex;
@@ -45,7 +41,7 @@ const GitHubLink = styled(BasicLink).attrs(() => {
 
 export default function Section2({}: Props) {
   return (
-    <Section2Wrapper>
+    <Section>
       <WhyNo>
         <Header2>What you Should not know about me</Header2>
         <Div>
@@ -93,6 +89,6 @@ export default function Section2({}: Props) {
           <GitHubLink>See Github</GitHubLink>
         </Div3>
       </WhyYes>
-    </Section2Wrapper>
+    </Section>
   );
 }

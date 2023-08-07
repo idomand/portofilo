@@ -4,8 +4,6 @@ import stayInTouchPicture from "../assets/stayintouch.png";
 import { BasicLink } from "../styles/common/Links";
 import { Div } from "../styles/common/Container";
 
-type Props = {};
-
 const StayInTouchProjectWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -15,7 +13,6 @@ const StayInTouchProjectWrapper = styled.div`
   }
 `;
 const ProjectSubSection = styled(Div)`
-  /* max-width: 50%; */
   @media (${({ theme }) => theme.devices.break1}) {
   }
 `;
@@ -44,7 +41,7 @@ const ProjectLink_Repo = styled(ProjectLink).attrs(() => {
   };
 })``;
 
-export default function StayInTouchProject({}: Props) {
+export default function StayInTouchProject() {
   return (
     <>
       <ProjectPicture>
