@@ -34,8 +34,8 @@ export default function Section3() {
     <Section3Wrapper>
       <Wrapper>
         <Header2>Get to know me with just 2 projects:</Header2>
-        <StayInTouchProject />
         <GermanGameProject />
+        <StayInTouchProject />
       </Wrapper>
     </Section3Wrapper>
   );
