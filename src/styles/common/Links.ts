@@ -6,7 +6,7 @@ export const EmailLink: any = styled.a.attrs(() => {
     href: "mailto:idomand@gmail.com",
   };
 })`
-  background-color: ${({ theme }) => theme.mainCTA};
+  background-color: ${({ theme }) => theme.blue};
   color: ${({ theme }) => theme.white};
   border: 1.3px solid ${({ theme }) => theme.white};
   border-radius: 80px;
@@ -22,8 +22,8 @@ export const EmailLink: any = styled.a.attrs(() => {
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
-    border: 1.3px solid ${({ theme }) => theme.mainCTA};
-    color: ${({ theme }) => theme.mainCTA};
+    border: 1.3px solid ${({ theme }) => theme.blue};
+    color: ${({ theme }) => theme.blue};
   }
   @media (${({ theme }) => theme.devices.break1}) {
     font-size: 20px;

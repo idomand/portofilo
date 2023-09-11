@@ -30,7 +30,7 @@ export default function GermanGameProject() {
     <ProjectWrapper>
       <ProjectTitle>German Game</ProjectTitle>
       <ProjectPicture>
-        <ProjectImg src={GermanGame} />
+        <ProjectImg alt="German Word Game project" src={GermanGame} />
       </ProjectPicture>
       <ProjectContentWrapper>
         <Div>

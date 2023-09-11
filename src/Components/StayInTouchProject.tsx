@@ -31,7 +31,7 @@ export default function StayInTouchProject() {
     <ProjectWrapper>
       <ProjectTitle>Stay-in-touch</ProjectTitle>
       <ProjectPicture>
-        <ProjectImg src={stayInTouchPicture} />
+        <ProjectImg alt="Stay-In-Touch project" src={stayInTouchPicture} />
       </ProjectPicture>
       <ProjectContentWrapper>
         <Div>
