@@ -49,8 +49,6 @@ export default function Section2({}: Props) {
             <ListItem>Can't stop asking why</ListItem>
             <ListItem>Insatiable hunger to learn</ListItem>
             <ListItem>Good at syntax errors</ListItem>
-            <ListItem>Use of tabs and spaces</ListItem>
-            <ListItem>Argumentative (Was a lawyer)</ListItem>
           </UL>
         </Div2>
       </WhyNo>
