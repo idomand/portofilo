@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-type Props = {};
-
 const NavbarWrapper = styled.section`
   margin: 16px 0 24px;
   display: flex;
@@ -43,7 +41,7 @@ const NavLink = styled(Link)`
   }
 `;
 
-export default function Navbar({}: Props) {
+export default function Navbar() {
   return (
     <NavbarWrapper>
       <NavLink to="/">Home</NavLink>

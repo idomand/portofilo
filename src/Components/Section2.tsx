@@ -3,8 +3,6 @@ import { Div, DivRight, Section } from "./common/Container";
 import { Header2, ListItem, UL } from "./common/Text";
 import { BasicLink } from "./common/Links";
 
-type Props = {};
-
 const WhyNo = styled.div``;
 const WhyYes = styled.div`
   display: flex;
@@ -33,7 +31,7 @@ const GitHubLink = styled(BasicLink).attrs(() => {
   };
 })``;
 
-export default function Section2({}: Props) {
+export default function Section2() {
   return (
     <Section>
       <WhyNo>

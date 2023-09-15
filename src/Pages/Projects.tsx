@@ -4,7 +4,6 @@ import StayInTouchProject from "../Components/StayInTouchProject";
 import styled from "styled-components";
 import { Section } from "../Components/common/Container";
 
-type Props = {};
 const Wrapper = styled.div`
   max-width: 100%;
   margin-inline: auto;
@@ -30,7 +29,7 @@ const Section3Wrapper = styled(Section)`
   }
 `;
 
-export default function Projects({}: Props) {
+export default function Projects() {
   return (
     <Section3Wrapper>
       <Wrapper>
