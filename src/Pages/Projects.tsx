@@ -1,8 +1,8 @@
-import { Header2 } from "../styles/common/Text";
+import { Header2 } from "../Components/common/Text";
 import GermanGameProject from "../Components/GermanGameProject";
 import StayInTouchProject from "../Components/StayInTouchProject";
 import styled from "styled-components";
-import { Section } from "../styles/common/Container";
+import { Section } from "../Components/common/Container";
 
 type Props = {};
 const Wrapper = styled.div`

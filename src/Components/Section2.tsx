@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import { Div, DivRight, Section } from "../styles/common/Container";
-import { Header2, ListItem, UL } from "../styles/common/Text";
-import { BasicLink } from "../styles/common/Links";
+import { Div, DivRight, Section } from "./common/Container";
+import { Header2, ListItem, UL } from "./common/Text";
+import { BasicLink } from "./common/Links";
 
 type Props = {};
 

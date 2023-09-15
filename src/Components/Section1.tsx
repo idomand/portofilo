@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
-import { Header1 } from "../styles/common/Text";
+import { Header1 } from "./common/Text";
 import TypedLine from "./TypedLine";
-import { EmailLink } from "../styles/common/Links";
-import { Section } from "../styles/common/Container";
+import { EmailLink } from "./common/Links";
+import { Section } from "./common/Container";
 
 const Section1Wrapper = styled(Section)`
   max-width: 900px;
