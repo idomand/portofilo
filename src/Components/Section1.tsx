@@ -22,6 +22,19 @@ const SiteHeader = styled(Header1)`
   }
 `;
 
+const SiteHeaderLine = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (${({ theme }) => theme.devices.break1}) {
+    justify-content: flex-start;
+  }
+  @media (${({ theme }) => theme.devices.break2}) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
 const SiteHeaderFirst = styled(SiteHeader)`
   background: linear-gradient(135deg, #43c6ac 0%, #2f7181 100%);
   background-clip: text;
@@ -33,9 +46,10 @@ const SiteHeaderSecond = styled(SiteHeader)`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   margin-left: 17px;
 
-  @media (${({ theme }) => theme.devices.break1}) {
+  @media (${({ theme }) => theme.devices.break2}) {
     margin: 0 0 10px 0;
   }
 `;
@@ -46,10 +60,10 @@ export default function Section1() {
   return (
     <Section1Wrapper>
       <TypedLine />
-      <div>
+      <SiteHeaderLine>
         <SiteHeaderFirst>I am Ido.</SiteHeaderFirst>
         <SiteHeaderSecond>I do Frontend</SiteHeaderSecond>
-      </div>
+      </SiteHeaderLine>
       <EmailLink onClick={letsChatFunc}>Let’s chat </EmailLink>
     </Section1Wrapper>
   );

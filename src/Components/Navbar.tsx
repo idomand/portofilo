@@ -2,24 +2,33 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const NavbarWrapper = styled.section`
-  margin: 16px 0 24px;
+  /* margin: 16px 0 24px; */
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 5%;
+  left: 80%;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: flex-end;
+
   z-index: 5;
   @media (${({ theme }) => theme.devices.break1}) {
-    left: 85%;
+    left: 80%;
+    align-items: flex-end;
+  }
+
+  @media (${({ theme }) => theme.devices.break2}) {
+    left: 70%;
     align-items: flex-end;
   }
 `;
 
 const NavLink = styled(Link)`
+  margin-top: 8px;
+  padding: 8px 12px;
   width: 110px;
-  background-color: ${({ theme }) => theme.LightBlue};
+  background-color: ${({ theme }) => theme.blue};
   color: ${({ theme }) => theme.white};
   border: 1.3px solid ${({ theme }) => theme.white};
   font-size: 16px;
@@ -27,17 +36,15 @@ const NavLink = styled(Link)`
   font-weight: 500;
   border-radius: 80px;
   line-height: 20px;
-  padding: 8px 12px;
   text-decoration: none;
   transition: 0.3s;
   display: inline-block;
-  margin-top: 16px;
   width: fit-content;
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
-    border: 1.3px solid ${({ theme }) => theme.LightBlue};
-    color: ${({ theme }) => theme.LightBlue};
+    border: 1.3px solid ${({ theme }) => theme.blue};
+    color: ${({ theme }) => theme.blue};
   }
 `;
 

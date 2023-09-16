@@ -1,12 +1,6 @@
-import React from "react";
-import styled from "styled-components";
 import Section1 from "../Components/Section1";
 import Section2 from "../Components/Section2";
-
-const MainWrapper = styled.main`
-  max-width: 900px;
-  margin: auto;
-`;
+import { MainWrapper } from "../Components/common/Container";
 
 export default function Home() {
   return (

@@ -2,7 +2,7 @@ import { Header2 } from "../Components/common/Text";
 import GermanGameProject from "../Components/GermanGameProject";
 import StayInTouchProject from "../Components/StayInTouchProject";
 import styled from "styled-components";
-import { Section } from "../Components/common/Container";
+import { MainWrapper, Section } from "../Components/common/Container";
 
 const Wrapper = styled.div`
   max-width: 100%;
@@ -31,12 +31,14 @@ const Section3Wrapper = styled(Section)`
 
 export default function Projects() {
   return (
-    <Section3Wrapper>
-      <Wrapper>
-        <Header2>Get to know me with just 2 projects:</Header2>
-        <GermanGameProject />
-        <StayInTouchProject />
-      </Wrapper>
-    </Section3Wrapper>
+    <MainWrapper>
+      <Section3Wrapper>
+        <Wrapper>
+          <Header2>Get to know me with just 2 projects:</Header2>
+          <GermanGameProject />
+          <StayInTouchProject />
+        </Wrapper>
+      </Section3Wrapper>
+    </MainWrapper>
   );
 }
