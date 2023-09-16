@@ -1,20 +1,18 @@
-import { styled } from "styled-components";
-import Section1 from "./Components/Section1";
-import Section2 from "./Components/Section2";
-import Section3 from "./Components/Section3";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const MainWrapper = styled.main`
-  max-width: 900px;
-  margin: auto;
-`;
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
 
 function App() {
   return (
-    <MainWrapper>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-    </MainWrapper>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

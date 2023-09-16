@@ -1,5 +1,10 @@
 import { styled } from "styled-components";
 
+export const MainWrapper = styled.main`
+  max-width: 900px;
+  margin: auto;
+`;
+
 export const Section = styled.section`
   margin-bottom: 48px;
   display: flex;

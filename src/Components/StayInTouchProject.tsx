@@ -1,14 +1,14 @@
 import { styled } from "styled-components";
-import { Header3, ListItem, UL } from "../styles/common/Text";
+import { Header3, ListItem, UL } from "./common/Text";
 import stayInTouchPicture from "../assets/stayintouch.png";
-import { ProjectLink } from "../styles/common/Links";
+import { ProjectLink } from "./common/Links";
 import {
   Div,
   DivRight,
   ProjectContentWrapper,
   ProjectWrapper,
-} from "../styles/common/Container";
-import { ProjectImg, ProjectPicture } from "../styles/common/pictures";
+} from "./common/Container";
+import { ProjectImg, ProjectPicture } from "./common/pictures";
 
 const ProjectTitle = styled(Header3)`
   margin-bottom: 16px;

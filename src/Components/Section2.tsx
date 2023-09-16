@@ -1,9 +1,7 @@
 import { styled } from "styled-components";
-import { Div, DivRight, Section } from "../styles/common/Container";
-import { Header2, ListItem, UL } from "../styles/common/Text";
-import { BasicLink } from "../styles/common/Links";
-
-type Props = {};
+import { Div, DivRight, Section } from "./common/Container";
+import { Header2, ListItem, UL } from "./common/Text";
+import { BasicLink } from "./common/Links";
 
 const WhyNo = styled.div``;
 const WhyYes = styled.div`
@@ -33,7 +31,7 @@ const GitHubLink = styled(BasicLink).attrs(() => {
   };
 })``;
 
-export default function Section2({}: Props) {
+export default function Section2() {
   return (
     <Section>
       <WhyNo>
@@ -49,8 +47,6 @@ export default function Section2({}: Props) {
             <ListItem>Can't stop asking why</ListItem>
             <ListItem>Insatiable hunger to learn</ListItem>
             <ListItem>Good at syntax errors</ListItem>
-            <ListItem>Use of tabs and spaces</ListItem>
-            <ListItem>Argumentative (Was a lawyer)</ListItem>
           </UL>
         </Div2>
       </WhyNo>
