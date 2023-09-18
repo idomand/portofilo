@@ -54,7 +54,7 @@ const SiteHeaderSecond = styled(SiteHeader)`
   }
 `;
 
-export default function Section1() {
+export default function Header() {
   function letsChatFunc() {}
 
   return (

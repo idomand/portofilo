@@ -1,12 +1,12 @@
-import Section1 from "../Components/Section1";
-import Section2 from "../Components/Section2";
+import Header from "../Components/Header";
+import AboutMe from "../Components/AboutMe";
 import { MainWrapper } from "../Components/common/Container";
 
 export default function Home() {
   return (
     <MainWrapper>
-      <Section1 />
-      <Section2 />
+      <Header />
+      <AboutMe />
     </MainWrapper>
   );
 }

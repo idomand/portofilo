@@ -31,7 +31,7 @@ const GitHubLink = styled(BasicLink).attrs(() => {
   };
 })``;
 
-export default function Section2() {
+export default function AboutMe() {
   return (
     <Section>
       <WhyNo>
