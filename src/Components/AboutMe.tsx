@@ -34,22 +34,6 @@ const GitHubLink = styled(BasicLink).attrs(() => {
 export default function AboutMe() {
   return (
     <Section>
-      <WhyNo>
-        <Header2>What you Should not know about me</Header2>
-        <Div2>
-          <UL>
-            <ListItem>Will finish the coffee in the office</ListItem>
-            <ListItem>Will finish the glühwein at the christmas party</ListItem>
-            <ListItem>
-              Will try to get the company to adopt a dog friendly work
-              environment just because it’s fun (and I don’t even have a dog)
-            </ListItem>
-            <ListItem>Can't stop asking why</ListItem>
-            <ListItem>Insatiable hunger to learn</ListItem>
-            <ListItem>Good at syntax errors</ListItem>
-          </UL>
-        </Div2>
-      </WhyNo>
       <Header2>What you Should know about me</Header2>
       <WhyYes>
         <Div>
@@ -77,6 +61,22 @@ export default function AboutMe() {
           <GitHubLink>See Github</GitHubLink>
         </DivRight>
       </WhyYes>
+      <WhyNo>
+        <Header2>What you Should not know about me</Header2>
+        <Div2>
+          <UL>
+            <ListItem>Will finish the coffee in the office</ListItem>
+            <ListItem>Will finish the glühwein at the christmas party</ListItem>
+            <ListItem>
+              Will try to get the company to adopt a dog friendly work
+              environment just because it’s fun (and I don’t even have a dog)
+            </ListItem>
+            <ListItem>Can't stop asking why</ListItem>
+            <ListItem>Insatiable hunger to learn</ListItem>
+            <ListItem>Good at syntax errors</ListItem>
+          </UL>
+        </Div2>
+      </WhyNo>
     </Section>
   );
 }
