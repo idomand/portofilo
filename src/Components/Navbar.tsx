@@ -39,7 +39,30 @@ const NavLink = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
   display: inline-block;
-  width: fit-content;
+  text-align: center;
+  &:hover,
+  &:active {
+    background: ${({ theme }) => theme.white};
+    border: 1.3px solid ${({ theme }) => theme.blue};
+    color: ${({ theme }) => theme.blue};
+  }
+`;
+
+const EmailLink2 = styled.a`
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: ${({ theme }) => theme.blue};
+  color: ${({ theme }) => theme.white};
+  border: 1.3px solid ${({ theme }) => theme.white};
+  font-size: 16px;
+  width: 110px;
+  font-weight: 500;
+  border-radius: 80px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
@@ -53,6 +76,9 @@ export default function Navbar() {
     <NavbarWrapper>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/projects">Projects</NavLink>
+      <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
+        Let’s chat{" "}
+      </EmailLink2>
     </NavbarWrapper>
   );
 }

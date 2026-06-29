@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import { Header1 } from "./common/Text";
 import TypedLine from "./TypedLine";
-import { EmailLink } from "./common/Links";
 import { Section } from "./common/Container";
 
 const Section1Wrapper = styled(Section)`
@@ -55,8 +54,6 @@ const SiteHeaderSecond = styled(SiteHeader)`
 `;
 
 export default function Header() {
-  function letsChatFunc() {}
-
   return (
     <Section1Wrapper>
       <TypedLine />
@@ -64,7 +61,6 @@ export default function Header() {
         <SiteHeaderFirst>I am Ido.</SiteHeaderFirst>
         <SiteHeaderSecond>I do Frontend</SiteHeaderSecond>
       </SiteHeaderLine>
-      <EmailLink onClick={letsChatFunc}>Let’s chat </EmailLink>
     </Section1Wrapper>
   );
 }
