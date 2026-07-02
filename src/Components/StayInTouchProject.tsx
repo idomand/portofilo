@@ -10,22 +10,6 @@ import {
 } from "./common/Container";
 import { ProjectImg, ProjectPicture } from "./common/pictures";
 
-const ProjectTitle = styled(Header3)`
-  margin-bottom: 16px;
-`;
-
-const ProjectLink_Live = styled(ProjectLink).attrs(() => {
-  return {
-    href: "https://stay-in-touch.vercel.app/",
-  };
-})``;
-
-const ProjectLink_Repo = styled(ProjectLink).attrs(() => {
-  return {
-    href: "https://github.com/idomand/stayInTouch",
-  };
-})``;
-
 export default function StayInTouchProject() {
   return (
     <ProjectWrapper>
@@ -75,3 +59,19 @@ export default function StayInTouchProject() {
     </ProjectWrapper>
   );
 }
+
+const ProjectTitle = styled(Header3)`
+  margin-bottom: 16px;
+`;
+
+const ProjectLink_Live = styled(ProjectLink).attrs(() => {
+  return {
+    href: "https://stay-in-touch.vercel.app/",
+  };
+})``;
+
+const ProjectLink_Repo = styled(ProjectLink).attrs(() => {
+  return {
+    href: "https://github.com/idomand/stayInTouch",
+  };
+})``;
