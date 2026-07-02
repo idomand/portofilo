@@ -1,5 +1,20 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Icon from "@mdi/react";
+import { mdiEmailOutline } from "@mdi/js";
+
+export default function Navbar() {
+  return (
+    <NavbarWrapper>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/projects">Projects</NavLink>
+      <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
+        <span>Let’s chat</span>
+        <Icon path={mdiEmailOutline} size={0.5} />
+      </EmailLink2>
+    </NavbarWrapper>
+  );
+}
 
 const NavbarWrapper = styled.section`
   /* margin: 16px 0 24px; */
@@ -51,18 +66,22 @@ const NavLink = styled(Link)`
 const EmailLink2 = styled.a`
   margin-top: 8px;
   padding: 8px 12px;
+  width: 110px;
   background-color: ${({ theme }) => theme.blue};
   color: ${({ theme }) => theme.white};
   border: 1.3px solid ${({ theme }) => theme.white};
-  font-size: 16px;
-  width: 110px;
+  font-size: 13px;
+  font-style: normal;
   font-weight: 500;
   border-radius: 80px;
   line-height: 20px;
   text-decoration: none;
   transition: 0.3s;
-  display: inline-block;
-  text-align: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
@@ -70,15 +89,3 @@ const EmailLink2 = styled.a`
     color: ${({ theme }) => theme.blue};
   }
 `;
-
-export default function Navbar() {
-  return (
-    <NavbarWrapper>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/projects">Projects</NavLink>
-      <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
-        Let’s chat{" "}
-      </EmailLink2>
-    </NavbarWrapper>
-  );
-}

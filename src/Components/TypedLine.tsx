@@ -32,6 +32,7 @@ export default function TypedLine() {
         "I do Frontend!",
         "I do UX/UI",
         "I do React.js",
+        "I do Vue.js",
         "I do TypeScript",
         "I do Next.js",
         "I do CSS, SASS, Tailwind and Styled-Components",
