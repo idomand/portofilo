@@ -3,13 +3,26 @@ import { Header1 } from "./common/Text";
 import TypedLine from "./TypedLine";
 import { Section } from "./common/Container";
 
+export default function Header() {
+  return (
+    <Section1Wrapper>
+      <TypedLine />
+      <SiteHeaderLine>
+        <SiteHeaderFirst>I am Ido.</SiteHeaderFirst>
+        <SiteHeaderSecond>I do Frontend</SiteHeaderSecond>
+      </SiteHeaderLine>
+    </Section1Wrapper>
+  );
+}
+
 const Section1Wrapper = styled(Section)`
   max-width: 900px;
+  margin-bottom: 0;
 `;
 
 const SiteHeader = styled(Header1)`
   display: inline-block;
-  margin: 20px 0 48px 0;
+  margin: 20px 0;
   text-align: left;
   font-size: 57px;
   @media (${({ theme }) => theme.devices.break1}) {
@@ -52,15 +65,3 @@ const SiteHeaderSecond = styled(SiteHeader)`
     margin: 0 0 10px 0;
   }
 `;
-
-export default function Header() {
-  return (
-    <Section1Wrapper>
-      <TypedLine />
-      <SiteHeaderLine>
-        <SiteHeaderFirst>I am Ido.</SiteHeaderFirst>
-        <SiteHeaderSecond>I do Frontend</SiteHeaderSecond>
-      </SiteHeaderLine>
-    </Section1Wrapper>
-  );
-}

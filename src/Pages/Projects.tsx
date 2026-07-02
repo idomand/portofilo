@@ -4,6 +4,20 @@ import StayInTouchProject from "../Components/StayInTouchProject";
 import styled from "styled-components";
 import { MainWrapper, Section } from "../Components/common/Container";
 
+export default function Projects() {
+  return (
+    <MainWrapper>
+      <Section3Wrapper>
+        <Wrapper>
+          <Header2>Get to know me with just 2 projects:</Header2>
+          <StayInTouchProject />
+          <GermanGameProject />
+        </Wrapper>
+      </Section3Wrapper>
+    </MainWrapper>
+  );
+}
+
 const Wrapper = styled.div`
   max-width: 100%;
   margin-inline: auto;
@@ -28,17 +42,3 @@ const Section3Wrapper = styled(Section)`
     transform: skewY(var(--skew-angle));
   }
 `;
-
-export default function Projects() {
-  return (
-    <MainWrapper>
-      <Section3Wrapper>
-        <Wrapper>
-          <Header2>Get to know me with just 2 projects:</Header2>
-          <GermanGameProject />
-          <StayInTouchProject />
-        </Wrapper>
-      </Section3Wrapper>
-    </MainWrapper>
-  );
-}
