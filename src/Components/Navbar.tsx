@@ -8,6 +8,7 @@ export default function Navbar() {
     <NavbarWrapper>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/projects">Projects</NavLink>
+      <NavLink to="/links">Links</NavLink>
       <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
         <span>Let’s chat</span>
         <Icon path={mdiEmailOutline} size={0.5} />
