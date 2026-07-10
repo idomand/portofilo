@@ -1,18 +1,25 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Icon from "@mdi/react";
 import { mdiEmailOutline } from "@mdi/js";
 
 export default function Navbar() {
+  const { pathname } = useLocation();
+  const isLinksPage = pathname === "/links";
+
   return (
     <NavbarWrapper>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/links">Links</NavLink>
-      <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
-        <span>Let’s chat</span>
-        <Icon path={mdiEmailOutline} size={0.5} />
-      </EmailLink2>
+      {!isLinksPage && (
+        <>
+          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/links">Links</NavLink>
+          <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
+            <span>Let’s chat</span>
+            <Icon path={mdiEmailOutline} size={0.5} />
+          </EmailLink2>
+        </>
+      )}
     </NavbarWrapper>
   );
 }
