@@ -44,11 +44,9 @@ export default function AboutMe() {
             <ListItem>Will finish the Glühwein at the Christmas party</ListItem>
             <ListItem>
               Will try to get the company to adopt a dog friendly work
-              environment just because it’s fun
+              environment
             </ListItem>
             <ListItem>Can't stop asking why</ListItem>
-            <ListItem>Insatiable hunger to learn</ListItem>
-            <ListItem>Good at syntax errors</ListItem>
           </UL>
         </Div2>
       </WhyNo>
