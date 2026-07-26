@@ -37,11 +37,11 @@ export default function GermanGameProject() {
           <Header3>WHY</Header3>
           <UL>
             <ListItem>
-              As a fun way to learn the German articles, I’ve created a small
-              game to reinforce the most common words in the german language
+              As a fun way to learn German articles, I’ve created a small game
+              to reinforce the most common words in the German language.
             </ListItem>
             <ListItem>Learning Next 13 and Tailwind CSS</ListItem>
-            <ListItem>For foreigners mastering German Grammar</ListItem>
+            <ListItem>For foreigners mastering German grammar.</ListItem>
           </UL>
           <ProjectLink_Live>Live Site</ProjectLink_Live>
         </Div>
@@ -49,9 +49,9 @@ export default function GermanGameProject() {
           <Header3>HOW</Header3>
           <UL>
             <ListItem>
-              This game was create with Typescript and React.js
+              This game was created with TypeScript and React.js.
             </ListItem>
-            <ListItem>tailwindCSS was used for the design.</ListItem>
+            <ListItem>Tailwind CSS was used for the design.</ListItem>
             <ListItem>
               Firebase was used for the authentication and database
             </ListItem>

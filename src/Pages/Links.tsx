@@ -24,7 +24,7 @@ type LinkItem = {
 const links: LinkItem[] = [
   {
     id: "github",
-    label: "My Github",
+    label: "My GitHub",
     value: "https://github.com/idomand",
     href: "https://github.com/idomand",
     icon: mdiGithub,

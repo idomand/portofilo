@@ -6,7 +6,7 @@ import { BasicLink } from "./common/Links";
 export default function AboutMe() {
   return (
     <Section>
-      <Header2>What you Should know about me</Header2>
+      <Header2>What you should know about me</Header2>
       <WhyYes>
         <Div>
           <UL>
@@ -26,25 +26,25 @@ export default function AboutMe() {
             <ListItem>Proficient in JavaScript and TypeScript</ListItem>
             <ListItem>Experience in both React and Vue</ListItem>
             <ListItem>
-              Worked in enterprises codebase using Next.js, Redux and Pinia
+              Worked in enterprise codebases using Next.js, Redux and Pinia
             </ListItem>
             <ListItem>
               Great at making designers dream in Figma into a reality with:{" "}
               <br /> CSS | Tailwind | SCSS | styled-components{" "}
             </ListItem>
           </UL>
-          <GitHubLink>See Github</GitHubLink>
+          <GitHubLink>See GitHub</GitHubLink>
         </DivRight>
       </WhyYes>
       <WhyNo>
-        <Header2>What you Should not know about me</Header2>
+        <Header2>What you should not know about me</Header2>
         <Div2>
           <UL>
             <ListItem>Will finish the coffee in the office</ListItem>
-            <ListItem>Will finish the glühwein at the christmas party</ListItem>
+            <ListItem>Will finish the Glühwein at the Christmas party</ListItem>
             <ListItem>
               Will try to get the company to adopt a dog friendly work
-              environment just because it’s fun (and I don’t even have a dog)
+              environment just because it’s fun
             </ListItem>
             <ListItem>Can't stop asking why</ListItem>
             <ListItem>Insatiable hunger to learn</ListItem>
