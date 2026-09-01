@@ -1,5 +1,6 @@
 import { Header2 } from "../Components/common/Text";
-import GermanGameProject from "../Components/GermanGameProject";
+import SwipeAndThrowProject from "../Components/SwipeAndThrowProject";
+import RecipeRefinerProject from "../Components/RecipeRefinerProject";
 import StayInTouchProject from "../Components/StayInTouchProject";
 import styled from "styled-components";
 import { MainWrapper, Section } from "../Components/common/Container";
@@ -9,9 +10,10 @@ export default function Projects() {
     <MainWrapper>
       <Section3Wrapper>
         <Wrapper>
-          <Header2>Get to know me with just 2 projects:</Header2>
+          <Header2>Get to know me with just 3 projects:</Header2>
           <StayInTouchProject />
-          <GermanGameProject />
+          <SwipeAndThrowProject />
+          <RecipeRefinerProject />
         </Wrapper>
       </Section3Wrapper>
     </MainWrapper>

@@ -42,6 +42,7 @@ export const EmailLink: any = styled.a.attrs(() => {
 export const BasicLink: any = styled.a.attrs(() => {
   return {
     target: "_blank",
+    rel: "noopener noreferrer",
   };
 })`
   background-color: ${({ theme }) => theme.blue};
