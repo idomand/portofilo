@@ -36,6 +36,9 @@ export default function Navbar() {
             <NavLink to="/projects" onClick={close}>
               Projects
             </NavLink>
+            <NavLink to="/blog" onClick={close}>
+              Blog
+            </NavLink>
             <NavLink to="/links" onClick={close}>
               Links
             </NavLink>
@@ -67,7 +70,6 @@ const MenuToggle = styled.button`
   cursor: pointer;
   z-index: 20;
   transition: 0.3s;
-
   &:hover,
   &:active {
     background: ${({ theme }) => theme.white};
