@@ -6,7 +6,6 @@ import { mdiEmailOutline, mdiClose, mdiMenu } from "@mdi/js";
 
 export default function Navbar() {
   const { pathname } = useLocation();
-  const isLinksPage = pathname === "/links";
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -31,20 +30,16 @@ export default function Navbar() {
         <NavLink to="/" onClick={close}>
           Home
         </NavLink>
-        {!isLinksPage && (
-          <>
-            <NavLink to="/projects" onClick={close}>
-              Projects
-            </NavLink>
-            <NavLink to="/links" onClick={close}>
-              Links
-            </NavLink>
-            <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
-              <span>Let’s chat</span>
-              <Icon path={mdiEmailOutline} size={0.5} />
-            </EmailLink2>
-          </>
-        )}
+        <NavLink to="/#projects" onClick={close}>
+          Projects
+        </NavLink>
+        <NavLink to="/links" onClick={close}>
+          Links
+        </NavLink>
+        <EmailLink2 href="mailto:idomand@gmail.com" target="_blank">
+          <span>Let’s chat</span>
+          <Icon path={mdiEmailOutline} size={0.5} />
+        </EmailLink2>
       </NavbarWrapper>
     </>
   );

@@ -36,37 +36,15 @@ export default function AboutMe() {
           <GitHubLink>See GitHub</GitHubLink>
         </DivRight>
       </WhyYes>
-      <WhyNo>
-        <Header2>What you should not know about me</Header2>
-        <Div2>
-          <UL>
-            <ListItem>Will finish the coffee in the office</ListItem>
-            <ListItem>Will finish the Glühwein at the Christmas party</ListItem>
-            <ListItem>
-              Will try to get the company to adopt a dog friendly work
-              environment
-            </ListItem>
-            <ListItem>Can't stop asking why</ListItem>
-          </UL>
-        </Div2>
-      </WhyNo>
     </Section>
   );
 }
 
-const WhyNo = styled.div``;
 const WhyYes = styled.div`
   display: flex;
   justify-content: space-around;
   @media (${({ theme }) => theme.devices.break1}) {
     flex-direction: column;
-  }
-`;
-
-const Div2 = styled(Div)`
-  max-width: 100%;
-  @media (${({ theme }) => theme.devices.break1}) {
-    margin-bottom: 15px;
   }
 `;
 

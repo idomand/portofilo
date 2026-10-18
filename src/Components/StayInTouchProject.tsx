@@ -22,16 +22,21 @@ export default function StayInTouchProject() {
           <Header3>WHY</Header3>
           <UL>
             <ListItem>
-              Seeing how some technologies can make people feel isolated, I
-              wanted to create something to bring people closer together.
+              As working adults, it's easy to wake up and realize you haven't
+              talked to a good friend in months.
             </ListItem>
             <ListItem>
-              This is a small app to help us stay in touch with friends and
-              family.
+              Some technology makes people feel more isolated. I wanted to build
+              something that brings them closer.
             </ListItem>
             <ListItem>
-              I also love TypeScript and Next.js, and I wanted to build a basic
-              design system for myself.
+              You add the people you care about and choose how often you want to
+              talk. with the option of getting personal Email notifications to
+              help you remember.
+            </ListItem>
+            <ListItem>
+              Linked friends, the app allow you to link your status with your
+              friend so you'll both make sure to Stay In Touch!
             </ListItem>
           </UL>
           <ProjectLink_Live>Live Site</ProjectLink_Live>
@@ -40,17 +45,23 @@ export default function StayInTouchProject() {
           <Header3>HOW</Header3>
           <UL>
             <ListItem>
-              This project is a PWA so it can be used like a native app.
+              Full-stack project with auth, a database and a live user base
             </ListItem>
             <ListItem>
-              Writing in TypeScript and Next.js for better maintainability.
+              An installable PWA with a hand-written service worker, so it can
+              be used like a native app.
             </ListItem>
             <ListItem>
-              Styled-Components was chosen for its component-based approach and
-              its built-in theme support.
+              Built with Next.js 16 (App Router), React 19 and TypeScript, with
+              Server Actions for all data writes.
             </ListItem>
             <ListItem>
-              Firebase was used for secure authentication and built-in database.
+              Firebase Auth (Google or verified email) with secure session
+              cookies.
+            </ListItem>
+            <ListItem>Neon Postgres with Drizzle ORM.</ListItem>
+            <ListItem>
+              Styled with Tailwind CSS v4, and available in English and German.
             </ListItem>
           </UL>
           <ProjectLink_Repo>Repo</ProjectLink_Repo>
@@ -66,7 +77,7 @@ const ProjectTitle = styled(Header3)`
 
 const ProjectLink_Live = styled(ProjectLink).attrs(() => {
   return {
-    href: "https://stay-in-touch.vercel.app/",
+    href: "https://stay-in-touch.vip/",
   };
 })``;
 
