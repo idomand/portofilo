@@ -13,7 +13,7 @@ import { ProjectImg, ProjectPicture } from "./common/pictures";
 export default function RecipeRefinerProject() {
   return (
     <ProjectWrapper>
-      <ProjectTitle>Recipe Refiner</ProjectTitle>
+      <ProjectTitle>Recipe Refiner (collaborative project)</ProjectTitle>
       <ProjectPicture>
         <ProjectImg alt="RecipeRefiner project" src={recipeRefinerPicture} />
       </ProjectPicture>
@@ -31,6 +31,12 @@ export default function RecipeRefinerProject() {
             <ListItem>
               Built as a collaboration with a fellow developer, working across a
               full stack.
+            </ListItem>
+            <ListItem>
+              Live Chrome extension{" "}
+              <a href="https://chromewebstore.google.com/detail/recipe-refiner/bddgeacombjgnloifhbgenbidldmcjom">
+                recipe-refiner
+              </a>
             </ListItem>
           </UL>
           <ProjectLink_Live>Live Site</ProjectLink_Live>

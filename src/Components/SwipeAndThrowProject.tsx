@@ -32,23 +32,19 @@ export default function SwipeAndThrowProject() {
               A Tinder-style swipe interface for fast keep-or-discard decisions,
               one photo at a time.
             </ListItem>
-            <ListItem>A chance to explore native mobile development.</ListItem>
           </UL>
           <ProjectLink_Live>Live Site</ProjectLink_Live>
         </Div>
         <DivRight>
           <Header3>HOW</Header3>
           <UL>
+            <ListItem>TypeScript+ React Native + React 19.</ListItem>
             <ListItem>
               Built with Expo (SDK 57) and Expo Router for file-based routing.
             </ListItem>
             <ListItem>
-              React Native + React 19, written in TypeScript (strict mode).
-            </ListItem>
-            <ListItem>
               Reanimated and Gesture Handler power the swipe gestures.
             </ListItem>
-            <ListItem>Currently in early development, Android first.</ListItem>
           </UL>
           <ProjectLink_Repo>Repo</ProjectLink_Repo>
         </DivRight>
